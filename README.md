@@ -23,8 +23,8 @@ This project depends on the following technologies:
 
 To install and run this project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/yourrepository.git`
-2. Navigate to the project directory: `cd yourrepository`
+1. Clone the repository: `git clone https://github.com/rickyurvinauc/wasm-daw`
+2. Navigate to the project directory: `cd wasm-daw`
 3. Compile the C code to WebAssembly using Emscripten: `emcc -O3 -s WASM=1 -o prime_factors.js prime_factors.c -sEXPORTED_FUNCTIONS="['_findPrimeFactors','_malloc','_free']" -sEXPORTED_RUNTIME_METHODS=ccall,cwrap,getValue`
 4. Open the `index.html` file in your browser to run the application.
 
