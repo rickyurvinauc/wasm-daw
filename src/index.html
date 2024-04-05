@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorización de números primos</title>
+    <style>
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+<h1>Factorización de números primos</h1>
+<div class="row">
+    <div class="column">
+        <h2>Factorización usando Wasm</h2>
+        <label for="numberInputWasm">Ingrese un número:</label>
+        <input type="text" id="numberInputWasm">
+        <button onclick="factorize()">FactorizarWasm</button>
+        <div id="resultWasm"></div>
+    </div>
+    <div class="column">
+        <h2>Factorización usando JavaScript puro</h2>
+        <label for="numberInputJs">Ingrese un número:</label>
+        <input type="text" id="numberInputJs">
+        <button onclick="factorizePureJs()">FactorizarJs</button>
+        <div id="resultJs"></div>
+    </div>
+</div>
+
+<script src="prime_factors.js"></script>
+<script src="prime_factors_pure.js"></script>
+<script src="wasm_and_js.js"></script>
+</body>
+</html>
