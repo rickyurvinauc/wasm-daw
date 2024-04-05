@@ -39,3 +39,6 @@ Contributions to this project are welcome. If you find a bug or have a suggestio
 ## License
 
 This project is licensed under the terms of the MIT license.# wasm-daw
+
+## Team Members
+Jose Cáceres, Ricardo Urvina, Sofía Villalobos.
