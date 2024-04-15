@@ -8,12 +8,18 @@ function factorizePureJs() {
 }
 
 function findPrimeFactorsJs(n) {
+    let i = 2;
     const factors = [];
-    for (let i = 2; i <= n; i++) {
-        while (n % i === 0) {
-            factors.push(i);
+    while (i * i <= n) {
+        if (n % i) {
+            i += 1;
+        } else {
             n /= i;
+            factors.push(i);
         }
+    }
+    if (n > 1) {
+        factors.push(n);
     }
     return factors;
 }

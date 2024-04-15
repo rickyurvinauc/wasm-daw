@@ -1,7 +1,7 @@
 function factorize() {
     const number = parseInt(document.getElementById('numberInputWasm').value);
     const start = performance.now();
-    const sizePtr = Module._malloc(2);
+    const sizePtr = Module._malloc(4);
     const resultPtr = Module.ccall('findPrimeFactors', 'number', ['number', 'number'], [number, sizePtr]);
     const size = Module.getValue(sizePtr, 'i32');
     const result = [];
